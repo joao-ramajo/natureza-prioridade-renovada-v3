@@ -86,6 +86,9 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "stan": [
+            "vendor/bin/phpstan analyse src tests --level=4"
         ]
     },
     "conflict": {
@@ -98,6 +101,7 @@
         }
     },
     "require-dev": {
+        "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^12.5",
         "symfony/browser-kit": "8.0.*",
         "symfony/css-selector": "8.0.*",
