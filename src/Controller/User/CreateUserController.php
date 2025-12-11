@@ -35,7 +35,7 @@ class CreateUserController extends AbstractController
 
         return $this->json([
             'message' => 'Usuário criado com sucesso.',
-            'data' => $result,
+            'data' => $result
         ]);
     }
 }
