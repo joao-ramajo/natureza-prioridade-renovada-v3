@@ -89,6 +89,9 @@
         ],
         "stan": [
             "phpstan analyse"
+        ],
+        "test": [
+            "./vendor/bin/phpunit"
         ]
     },
     "conflict": {
