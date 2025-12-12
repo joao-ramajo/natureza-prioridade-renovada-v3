@@ -19,5 +19,10 @@ services:
     App\:
         resource: '../src/'
 
+    App\Services\JwtService:
+        arguments:
+            $secretKey: '%env(JWT_SECRET_KEY)%'
+            $expirationTime: 3600 # 1 hora
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
